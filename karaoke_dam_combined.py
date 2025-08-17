@@ -11,8 +11,8 @@ import csv
 import os
 import pandas as pd
 
-DAMTOMO_ID = "kumasa163"
-DAMTOMO_PASS = "kumasa1219"
+DAMTOMO_ID = "yourID"
+DAMTOMO_PASS = "yourPASS"
 CSV_AI = "scores_ai.csv"
 CSV_DXG = "scores_dxg.csv"
 
@@ -229,5 +229,6 @@ save_if_updated(dxg_data, CSV_DXG)
 
 #Upload to googledrive
 upload_multiple_to_drive(["scores_ai.csv", "scores_dxg.csv"], folder_name="KaraokeScores")
+
 
 driver.quit()
